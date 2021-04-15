@@ -7,6 +7,6 @@ package com.zs.sample.design.factory;
 public class Cat implements Animal {
 
     public void sound() {
-        System.out.println("喵喵喵...");
+        System.out.println("cat : 喵喵喵...");
     }
 }
