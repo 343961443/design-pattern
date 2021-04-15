@@ -1,6 +1,7 @@
 package com.zs.sample.design.factory;
 
 /**
+ * 工厂模式入口代码
  * @Author: zhaoshuai
  * @Date: 2021/4/15
  */
@@ -13,7 +14,7 @@ public class FactoryTest {
         // 狗叫
         dog.sound();
         Animal cat = animalFactory.getAnimal("cat");
-        // 狗叫
+        // 猫叫
         cat.sound();
     }
 }
