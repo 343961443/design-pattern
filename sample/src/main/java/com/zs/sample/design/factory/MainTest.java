@@ -5,7 +5,7 @@ package com.zs.sample.design.factory;
  * @Author: zhaoshuai
  * @Date: 2021/4/15
  */
-public class FactoryTest {
+public class MainTest {
     public static void main(String[] args) {
         // 初始工厂
         AnimalFactory animalFactory = new AnimalFactory();

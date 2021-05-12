@@ -4,7 +4,7 @@ package com.zs.sample.design.abstractfactory;
  * @Author: zhaoshuai
  * @Date: 2021/4/19
  */
-public class AbstractFactoryTest {
+public class MainTest {
     public static void main(String[] args) {
         // 获得形状工厂
         AbstractDrawFactory shapeFactory = FactoryProducer.getFactory("shape");
