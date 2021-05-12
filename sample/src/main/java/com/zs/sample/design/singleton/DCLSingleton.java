@@ -9,7 +9,7 @@ package com.zs.sample.design.singleton;
  * 推荐使用这种方式
  */
 public class DCLSingleton {
-    private static DCLSingleton singleton;
+    private static volatile DCLSingleton singleton;
     private DCLSingleton (){}
     public static DCLSingleton getSingleton() {
         if (singleton == null) {

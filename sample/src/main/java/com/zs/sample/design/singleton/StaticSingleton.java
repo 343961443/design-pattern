@@ -7,6 +7,12 @@ package com.zs.sample.design.singleton;
 public class StaticSingleton {
 
     private static class SingletonHolder {
+        {
+            System.out.println("SingletonHolder{}");
+        }
+        static {
+            System.out.println("SingletonHolder static{}");
+        }
         public SingletonHolder() {
             System.out.println("SingletonHolder constructor init");
         }
