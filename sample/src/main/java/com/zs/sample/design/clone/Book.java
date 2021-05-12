@@ -44,7 +44,7 @@ public class Book implements Cloneable,Serializable {
                 ", book=" + subBook +
                 '}';
     }
-    //  浅克隆模式
+    // 浅克隆模式
     @Override
     protected Object clone() throws CloneNotSupportedException {
         return super.clone();
@@ -55,7 +55,7 @@ public class Book implements Cloneable,Serializable {
         object.setBook((Book) object.getBook().clone());
         return object;
     }
-    // 前提是要实现Serializable 接口
+    // 流化克隆模式 前提是要实现Serializable 接口
     public Object streamClone() throws Exception {
         // 将对象写到流里
         ByteArrayOutputStream bo = new ByteArrayOutputStream();
