@@ -14,6 +14,6 @@ public class AC220ToDC5VAdapter implements ACToDC5VAdapter {
 
     public int outputDC5V() {
         System.out.println("正在使用220v->5v充电");
-        return ac220.outPutAC()/22;
+        return ac220.outPutAC() / 22;
     }
 }

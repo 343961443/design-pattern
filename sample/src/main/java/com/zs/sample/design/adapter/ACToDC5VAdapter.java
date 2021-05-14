@@ -7,5 +7,6 @@ package com.zs.sample.design.adapter;
  */
 public interface ACToDC5VAdapter {
     boolean support(AC ac);
+
     int outputDC5V();
 }

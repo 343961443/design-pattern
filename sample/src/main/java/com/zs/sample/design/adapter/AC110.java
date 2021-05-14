@@ -12,5 +12,4 @@ public class AC110 implements AC {
         return ac;
     }
 
-    
 }
