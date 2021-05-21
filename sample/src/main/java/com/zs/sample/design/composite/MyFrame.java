@@ -7,10 +7,6 @@ import java.util.Properties;
 
 public class MyFrame extends Frame {
 
-    static {
-        Properties pps=System.getProperties();
-        pps.setProperty("file.encoding","gb2312");
-    }
     public MyFrame(String title) {
         super(title);
     }
