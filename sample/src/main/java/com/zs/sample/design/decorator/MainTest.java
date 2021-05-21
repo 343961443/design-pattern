@@ -6,6 +6,7 @@ package com.zs.sample.design.decorator;
  */
 public class MainTest {
     public static void main(String[] args) {
-
+        CircleShapeDecorator circleShapeDecorator = new CircleShapeDecorator(new CircleShape());
+        circleShapeDecorator.draw();
     }
 }
