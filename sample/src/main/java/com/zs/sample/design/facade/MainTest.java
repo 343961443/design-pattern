@@ -10,5 +10,7 @@ public class MainTest {
         ShapeMarket shapeMarket = new ShapeMarket();
         shapeMarket.drawCircle();
         shapeMarket.drawSquare();
+
+
     }
 }
