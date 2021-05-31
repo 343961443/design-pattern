@@ -11,11 +11,12 @@ public class MainTest {
         AbstractLog abstractLog = LogChain.getChain();
         // debug级别
         abstractLog.log(AbstractLog.DEBUG, "111");
-
+        System.out.println();
         // info级别
         abstractLog.log(AbstractLog.INFO, "222");
-
+        System.out.println();
         // error级别
         abstractLog.log(AbstractLog.ERROR, "333");
+        System.out.println();
     }
 }
