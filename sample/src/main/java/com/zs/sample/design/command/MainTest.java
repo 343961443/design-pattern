@@ -6,14 +6,16 @@ package com.zs.sample.design.command;
  */
 public class MainTest {
     public static void main(String[] args) {
-        // 组装receiver转换成command
-        CommandConcatReceiver commandConcatReceiverA = new CommandConcatReceiver(new ReceiverA());
-        CommandConcatReceiver commandConcatReceiverB = new CommandConcatReceiver(new ReceiverB());
+        // 通过receiver转换成command
+        ICommand commandA = new ReceiverConvertCommand(new ReceiverA());
+        ICommand commandB = new ReceiverConvertCommand(new ReceiverB());
 
         // 统一调用commandinvoker 执行
         CommandInvoker commandInvoker = new CommandInvoker();
-        commandInvoker.addCommandList(commandConcatReceiverA);
-        commandInvoker.addCommandList(commandConcatReceiverB);
+        commandInvoker.addCommandList(commandA);
+        commandInvoker.addCommandList(commandB);
         commandInvoker.executeCommandList();
+
+        // 如果有新的命令执行者ReceiverC，那么只用增加一个类实现其方法即可。其他框架细节不用变
     }
 }

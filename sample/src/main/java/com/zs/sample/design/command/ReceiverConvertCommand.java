@@ -4,11 +4,11 @@ package com.zs.sample.design.command;
  * @Author: zhaoshuai
  * @Date: 2021/6/8
  */
-public class CommandConcatReceiver implements ICommand {
+public class ReceiverConvertCommand implements ICommand {
 
     private IReceiver receiver;
 
-    public CommandConcatReceiver(IReceiver receiver) {
+    public ReceiverConvertCommand(IReceiver receiver) {
         this.receiver = receiver;
     }
 
