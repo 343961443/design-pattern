@@ -10,7 +10,6 @@ public class Memento {
     private String message;
 
 
-
     public Memento(int status) {
         this.status = status;
     }
