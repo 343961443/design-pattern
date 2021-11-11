@@ -1,4 +1,4 @@
-package com.zs.sample.design;
+package com.zs.sample.design.state;
 
 import com.zs.sample.design.state.Bike;
 
